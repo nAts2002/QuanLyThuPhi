@@ -2,7 +2,7 @@
 Nhóm 30 - Nhập môn Công nghệ phần mềm
 Phần mềm trợ giúp việc quản lý thu phí viết bằng công cụ JavaFX
 
-# huongdancaidat
+# Hướng dẫn cài đặt
 <ul>
 <li>Tải file cơ sở dữ liệu trong thư mục database, tạo và import cơ sở dữ liệu trong mySQL. Chỉnh sửa trong class service.MysqlConnection mật khẩu phù hợp với mật khẩu tại của mySQL tại máy bạn ( thường trên Win thì không có mật khẩu thì sẽ để password = "") </li>
 <li>Tải về thư viện OpenJFX mới nhất tại trang chủ <a href="https://gluonhq.com/products/javafx/" target="_blank">https://gluonhq.com/products/javafx/</a> </li>
