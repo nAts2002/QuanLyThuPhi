@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" styleClass="pane" stylesheets="@../../source/change.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.hokhau.AddHoKhau">
+   <children>
+      <Pane layoutX="10.0" layoutY="48.0" prefHeight="137.0" prefWidth="780.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0">
+         <children>
+            <Pane layoutX="228.0" prefHeight="35.0" prefWidth="325.0">
+               <children>
+                  <TextField fx:id="tfMaHoKhau" layoutX="125.0" prefHeight="35.0" prefWidth="200.0" />
+                  <Label layoutY="9.0" text="Mã hộ khẩu" />
+               </children>
+            </Pane>
+            <Pane layoutX="228.0" layoutY="101.0" prefHeight="35.0" prefWidth="325.0">
+               <children>
+                  <Label layoutY="9.0" text="Địa chỉ" />
+                  <TextField fx:id="tfDiaChi" layoutX="125.0" prefHeight="35.0" prefWidth="200.0" />
+               </children>
+            </Pane>
+            <Pane layoutX="228.0" layoutY="49.0" prefHeight="35.0" prefWidth="325.0">
+               <children>
+                  <TextField fx:id="tfMaKV" layoutX="125.0" prefHeight="35.0" prefWidth="200.0" />
+                  <Label layoutY="9.0" text="Mã khu vực" />
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <Pane layoutX="10.0" layoutY="217.0" prefHeight="333.0" prefWidth="780.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="217.0">
+         <children>
+            <Pane layoutX="35.0" prefWidth="325.0">
+               <children>
+                  <TextField fx:id="tfMaChuHo" layoutX="125.0" prefHeight="35.0" prefWidth="200.0" />
+                  <Label layoutY="5.0" text="Mã nhân khẩu" />
+               </children>
+            </Pane>
+            <Pane layoutX="35.0" layoutY="126.0" prefWidth="325.0">
+               <children>
+                  <Label layoutY="9.0" text="Số CMND" />
+                  <TextField fx:id="tfCMND" layoutX="125.0" prefHeight="35.0" prefWidth="200.0" />
+               </children>
+            </Pane>
+            <Pane layoutX="35.0" layoutY="42.0" prefHeight="35.0" prefWidth="325.0">
+               <children>
+                  <Label layoutY="9.0" text="Họ tên chủ hộ" />
+                  <TextField fx:id="tfTenChuHo" layoutX="125.0" prefHeight="35.0" prefWidth="200.0" />
+               </children>
+            </Pane>
+            <Pane layoutX="35.0" layoutY="167.0" prefWidth="325.0">
+               <children>
+                  <TextField fx:id="tfSoDienThoai" layoutX="125.0" prefHeight="35.0" prefWidth="200.0" />
+                  <Label layoutY="9.0" text="Số điện thoại" />
+               </children>
+            </Pane>
+            <Pane layoutX="35.0" layoutY="208.0" prefWidth="325.0">
+               <children>
+                  <TextField fx:id="tfGioiTinh" layoutX="125.0" prefHeight="35.0" prefWidth="200.0" />
+                  <Label layoutY="9.0" text="Giới tính" />
+               </children>
+            </Pane>
+            <Pane layoutX="35.0" layoutY="249.0" prefWidth="325.0">
+               <children>
+                  <TextField fx:id="tfSoHoChieu" layoutX="125.0" prefHeight="35.0" prefWidth="200.0" />
+                  <Label layoutY="9.0" text="Số hộ chiếu" />
+               </children>
+            </Pane>
+            <Pane layoutX="35.0" layoutY="291.0" prefWidth="325.0">
+               <children>
+                  <TextField fx:id="tfQuocTich" layoutX="125.0" prefHeight="35.0" prefWidth="200.0" />
+                  <Label layoutY="9.0" text="Quốc tịch" />
+               </children>
+            </Pane>
+            <Pane layoutX="430.0" layoutY="85.0" prefWidth="325.0">
+               <children>
+                  <Label layoutY="9.0" text="Nơi Sinh" />
+                  <TextField fx:id="tfNoiSinh" layoutX="125.0" prefHeight="35.0" prefWidth="200.0" />
+               </children>
+            </Pane>
+            <Pane layoutX="430.0" layoutY="43.0" prefWidth="325.0">
+               <children>
+                  <Label layoutY="9.0" text="Nơi thường trú" />
+                  <TextField fx:id="tfNoiTru" layoutX="125.0" prefHeight="35.0" prefWidth="200.0" />
+               </children>
+            </Pane>
+            <Pane layoutX="430.0" layoutY="1.0" prefHeight="35.0" prefWidth="325.0">
+               <children>
+                  <Label layoutY="9.0" text="Dân tộc" />
+                  <TextField fx:id="tfDanToc" layoutX="125.0" prefHeight="35.0" prefWidth="200.0" />
+               </children>
+            </Pane>
+            <Pane layoutX="430.0" layoutY="126.0" prefWidth="325.0">
+               <children>
+                  <TextField fx:id="tfNguyenQuan" layoutX="125.0" prefHeight="35.0" prefWidth="200.0" />
+                  <Label layoutY="9.0" text="Nguyên Quán" />
+               </children>
+            </Pane>
+            <Pane layoutX="430.0" layoutY="167.0" prefWidth="325.0">
+               <children>
+                  <TextField fx:id="tfTonGiao" layoutX="125.0" prefHeight="35.0" prefWidth="200.0" />
+                  <Label layoutY="9.0" text="Tôn giáo" />
+               </children>
+            </Pane>
+            <Pane layoutX="430.0" layoutY="208.0" prefWidth="325.0">
+               <children>
+                  <TextField fx:id="tfDiaChiHienTai" layoutX="125.0" prefHeight="35.0" prefWidth="200.0" />
+                  <Label layoutY="9.0" text="Địa chỉ hiện tại" />
+               </children>
+            </Pane>
+            <Pane layoutX="430.0" layoutY="249.0" prefWidth="325.0">
+               <children>
+                  <TextField fx:id="tfGhiChu" layoutX="125.0" prefHeight="35.0" prefWidth="200.0" />
+                  <Label layoutY="9.0" text="Ghi chú" />
+               </children>
+            </Pane>
+            <Pane layoutX="35.0" layoutY="85.0" prefHeight="35.0" prefWidth="325.0">
+               <children>
+                  <Label prefHeight="35.0" text="Ngày Sinh" />
+                  <DatePicker fx:id="tfTuoi" layoutX="125.0" prefHeight="35.0" prefWidth="200.0" />
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <Button layoutX="350.0" layoutY="561.0" mnemonicParsing="false" onAction="#addHoKhau" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #ffffff;" text="Thêm" textFill="#1996f5">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Label layoutX="18.0" layoutY="14.0" prefHeight="30.0" prefWidth="174.0" text="Thông tin hộ khẩu" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="25.0" layoutY="186.0" text="Thông tin chủ hộ" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

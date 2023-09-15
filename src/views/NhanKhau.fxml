@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1400.0" stylesheets="@../source/Main.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.NhanKhauController">
+   <children>
+      <TableView fx:id="tvNhanKhau" layoutX="10.0" layoutY="58.0" AnchorPane.bottomAnchor="70.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="70.0">
+        <columns>
+          <TableColumn fx:id="colMaNhanKhau" prefWidth="192.79995441436768" text="Mã nhân khẩu" />
+          <TableColumn fx:id="colTen" prefWidth="270.40000915527344" text="Họ và tên" />
+            <TableColumn fx:id="colTuoi" prefWidth="123.20001220703125" text="Ngày Sinh" />
+            <TableColumn fx:id="colCMND" prefWidth="242.4000244140625" text="CMT/CCCD" />
+            <TableColumn fx:id="colSDT" minWidth="0.0" prefWidth="198.39990234375" text="SĐT" />
+            <TableColumn fx:id="colMaHo" minWidth="0.0" prefWidth="152.0" text="Mã hộ" />
+            <TableColumn fx:id="colGhiChu" prefWidth="195.0" text="Ghi chú" />
+        </columns>
+      </TableView>
+      <TextField fx:id="tfSearch" layoutX="10.0" layoutY="8.0" AnchorPane.bottomAnchor="740.0" AnchorPane.leftAnchor="390.0" AnchorPane.rightAnchor="510.0" AnchorPane.topAnchor="10.0" />
+      <ComboBox fx:id="cbChooseSearch" layoutX="420.0" layoutY="8.0" AnchorPane.bottomAnchor="740.0" AnchorPane.leftAnchor="940.0" AnchorPane.rightAnchor="260.0" AnchorPane.topAnchor="10.0" />
+      <Button layoutX="1190.0" layoutY="10.0" mnemonicParsing="false" onAction="#searchNhanKhau" styleClass="button3" stylesheets="@../source/Main.css" text="Tìm kiếm" textFill="#1996f5" AnchorPane.bottomAnchor="740.0" AnchorPane.leftAnchor="1190.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0" />
+      <Button layoutX="30.0" layoutY="546.0" mnemonicParsing="false" onAction="#addNhanKhau" styleClass="button1" stylesheets="@../source/Main.css" text="Thêm" textAlignment="CENTER" textFill="#1996f5" wrapText="true" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="1265.0" AnchorPane.topAnchor="740.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <Button layoutX="360.0" layoutY="740.0" mnemonicParsing="false" onAction="#delNhanKhau" prefHeight="50.0" prefWidth="125.0" styleClass="button1" stylesheets="@../source/Main.css" text="Xóa" textAlignment="CENTER" textFill="#1996f5" wrapText="true" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="165.0" AnchorPane.rightAnchor="1110.0" AnchorPane.topAnchor="740.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <Button layoutX="320.0" layoutY="740.0" mnemonicParsing="false" onAction="#updateNhanKhau" prefHeight="50.0" prefWidth="125.0" styleClass="button1" stylesheets="@../source/Main.css" text="Cập nhật" textAlignment="CENTER" textFill="#1996f5" wrapText="true" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="320.0" AnchorPane.rightAnchor="955.0" AnchorPane.topAnchor="740.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <Button layoutX="481.0" layoutY="740.0" mnemonicParsing="false" onAction="#dangKyTamVang" prefHeight="50.0" prefWidth="125.0" styleClass="button1" stylesheets="@../source/Main.css" text="ĐK tạm vắng" textAlignment="CENTER" textFill="#1996f5" wrapText="true" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="481.0" AnchorPane.rightAnchor="794.0" AnchorPane.topAnchor="740.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <Button layoutX="638.0" layoutY="740.0" mnemonicParsing="false" onAction="#dangKyTamTru" prefHeight="50.0" prefWidth="125.0" styleClass="button1" stylesheets="@../source/Main.css" text="ĐK tạm trú" textAlignment="CENTER" textFill="#1996f5" wrapText="true" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="638.0" AnchorPane.rightAnchor="637.0" AnchorPane.topAnchor="740.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <Button layoutX="790.0" layoutY="740.0" mnemonicParsing="false" onAction="#danhSachTamVang" prefHeight="50.0" prefWidth="144.0" styleClass="button1" stylesheets="@../source/Main.css" text="DS tạm vắng" textAlignment="CENTER" textFill="#1996f5" wrapText="true" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="790.0" AnchorPane.rightAnchor="460.0" AnchorPane.topAnchor="740.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <Button layoutX="965.0" layoutY="740.0" mnemonicParsing="false" onAction="#danhSachTamTru" styleClass="button1" stylesheets="@../source/Main.css" text="DS tạm trú" textAlignment="CENTER" textFill="#1996f5" wrapText="true" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="965.0" AnchorPane.rightAnchor="285.0" AnchorPane.topAnchor="740.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <Button layoutX="1145.0" layoutY="740.0" mnemonicParsing="false" onAction="#khaiTu" prefHeight="50.0" prefWidth="150.0" styleClass="button1" stylesheets="@../source/Main.css" text="Khai tử" textAlignment="CENTER" textFill="#1996f5" wrapText="true">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

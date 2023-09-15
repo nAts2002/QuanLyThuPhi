@@ -1,0 +1,26 @@
+.pane {
+    -fx-background-color: linear-gradient(#1cb5e0, #000046);
+    -fx-border-radius: 5px;
+    -fx-padding: 10px;
+}
+.button3 {
+    -fx-background-color:  #1996F5;
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+    -fx-border-color: #7ba3cc;
+    -fx-border-width: 2px;
+    -fx-text-fill: white;
+    -fx-font: 14px "Arial Bold";
+    -fx-alignment: center;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 10, 0, 0, 1);
+}
+
+.button3:hover {
+    -fx-background-color: #75baff;
+    -fx-border-color: #3f79a6;
+}
+
+.button3:pressed {
+    -fx-background-color: #7ba3cc;
+    -fx-border-color: #3f79a6;
+}

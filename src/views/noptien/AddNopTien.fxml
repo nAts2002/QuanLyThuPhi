@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="800.0" styleClass="pane" stylesheets="@../../source/change.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.noptien.AddNopTien">
+   <children>
+      <Label layoutX="346.0" layoutY="40.0" text="ĐÓNG PHÍ">
+         <font>
+            <Font size="30.0" />
+         </font></Label>
+      <Label layoutX="67.0" layoutY="119.0" text="Tên khoản thu" />
+      <Button layoutX="185.0" layoutY="113.0" mnemonicParsing="false" onAction="#chooseKhoanThu" text="Chọn" textFill="#1996f5" />
+      <TextField fx:id="tfTenKhoanThu" editable="false" layoutX="277.0" layoutY="113.0" prefHeight="39.0" prefWidth="395.0" style="-fx-background-color: #eaeaea;" />
+      <Button layoutX="185.0" layoutY="216.0" mnemonicParsing="false" onAction="#chooseNguoiNop" text="Chọn" textFill="#1996f5" />
+      <TextField fx:id="tfTenNguoiNop" editable="false" layoutX="277.0" layoutY="216.0" prefHeight="39.0" prefWidth="395.0" style="-fx-background-color: #eaeaea;" />
+      <Label layoutX="67.0" layoutY="222.0" text="Tên Người Nộp " />
+      <Label layoutX="67.0" layoutY="323.0" text="Ngày nộp" />
+      <DatePicker fx:id="datepicker" editable="false" layoutX="277.0" layoutY="317.0" prefHeight="39.0" prefWidth="395.0" />
+      <Button layoutX="361.0" layoutY="442.0" mnemonicParsing="false" onAction="#addNopTien" text="Thêm" textFill="#1996f5" />
+      <TextField fx:id="tfSoTien" layoutX="277.0" layoutY="163.0" prefHeight="39.0" prefWidth="395.0" />
+   </children>
+</AnchorPane>

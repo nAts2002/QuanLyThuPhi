@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="600" prefWidth="800" stylesheets="@../../source/Main.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.nhankhau.DanhSachTamVangController">
+   <children>
+      <Label layoutX="286.0" layoutY="14.0" text="Danh sách tạm vắng" textFill="#1996f5">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tvDSTamVang" layoutX="101.0" layoutY="134.0" prefHeight="226.0" prefWidth="367.0" AnchorPane.bottomAnchor="80.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="100.0">
+        <columns>
+          <TableColumn fx:id="colMaNhanKhau" prefWidth="107.20001220703125" text="Mã nhân khẩu" />
+          <TableColumn fx:id="colHoTen" prefWidth="117.60003662109375" text="Họ và tên" />
+            <TableColumn fx:id="colCMT" prefWidth="137.5999755859375" text="CMT/CCCD" />
+            <TableColumn fx:id="colNgaySinh" minWidth="4.79998779296875" prefWidth="242.4000244140625" text="Ngày Sinh" />
+            <TableColumn fx:id="colLyDo" minWidth="4.800048828125" prefWidth="150.0" text="Lý do" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

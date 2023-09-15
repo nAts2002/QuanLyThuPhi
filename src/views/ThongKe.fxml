@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="800" prefWidth="1400" stylesheets="@../source/Main.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ThongKeController">
+   <children>
+      <TableView fx:id="tvThongKe" layoutX="10.0" layoutY="72.0" prefHeight="524.0" prefWidth="605.0" AnchorPane.bottomAnchor="70.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="70.0">
+        <columns>
+            <TableColumn fx:id="colTenPhi" prefWidth="689.6000232696533" text="Tên phí" />
+            <TableColumn fx:id="colTongSoTien" prefWidth="683.199951171875" text="Tổng số tiền " />
+        </columns>
+      </TableView>
+      <ComboBox fx:id="cbChooseSearch" layoutX="10.0" layoutY="14.0" prefHeight="39.0" prefWidth="224.0" AnchorPane.bottomAnchor="740.0" AnchorPane.leftAnchor="940.0" AnchorPane.rightAnchor="260.0" AnchorPane.topAnchor="10.0" />
+      <Button layoutX="246.0" layoutY="14.0" mnemonicParsing="false" onAction="#loc" prefHeight="39.0" prefWidth="60.0" styleClass="button3" text="Lọc" textFill="#1996f5" AnchorPane.bottomAnchor="740.0" AnchorPane.leftAnchor="1190.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0" />
+   </children>
+</AnchorPane>

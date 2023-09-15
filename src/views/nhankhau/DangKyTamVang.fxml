@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="600" prefWidth="800" styleClass="pane" stylesheets="@../../source/change.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.nhankhau.DangKyTamVangController">
+   <children>
+      <Label layoutX="245.0" layoutY="28.0" text="Đăng ký tạm vắng">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="dateTuNgay" editable="false" layoutX="287.0" layoutY="221.0" prefHeight="40.0" prefWidth="300.0" />
+      <DatePicker fx:id="dateDenNgay" editable="false" layoutX="287.0" layoutY="280.0" prefHeight="40.0" prefWidth="300.0" />
+      <TextField fx:id="tfCMT" layoutX="287.0" layoutY="120.0" prefHeight="40.0" prefWidth="300.0" />
+      <TextArea fx:id="taLyDo" layoutX="287.0" layoutY="353.0" prefHeight="150.0" prefWidth="300.0" />
+      <TextField fx:id="tfMaTamVang" layoutX="287.0" layoutY="168.0" prefHeight="40.0" prefWidth="300.0" />
+      <Label layoutX="176.0" layoutY="131.0" text="Số CMT/CMND">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="169.0" layoutY="178.0" text="Mã Giấy tạm vắng">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="176.0" layoutY="232.0" text="Từ ngày">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="176.0" layoutY="272.0" text="Đến ngày">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="176.0" layoutY="365.0" text="Lý do">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="487.0" layoutY="538.0" mnemonicParsing="false" onAction="#addTamVang" prefHeight="30.0" prefWidth="100.0" text="Xác nhận" textFill="#1996f5">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="800" prefWidth="1400" styleClass="pane" stylesheets="@../source/Main.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainController">
+   <children>
+      <Label alignment="CENTER" layoutX="218.0" layoutY="22.0" prefHeight="125.0" prefWidth="282.0" text="Tổ dân phố 7, phường La Khê" textFill="#1996f5" AnchorPane.bottomAnchor="740.0" AnchorPane.leftAnchor="70.0" AnchorPane.rightAnchor="70.0" AnchorPane.topAnchor="10.0">
+         <font>
+            <Font name="System Bold" size="48.0" />
+         </font>
+      </Label>
+      <Pane layoutX="125.0" layoutY="114.0" prefHeight="130.0" prefWidth="589.0" style="-fx-background-color: #1996F5;" AnchorPane.bottomAnchor="550.0" AnchorPane.leftAnchor="125.0" AnchorPane.rightAnchor="125.0" AnchorPane.topAnchor="150.0">
+         <children>
+            <Label layoutX="70.0" layoutY="25.0" prefHeight="70.0" prefWidth="215.0" text="Số nhân khẩu:" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbSoNhanKhau" layoutX="300.0" layoutY="25.0" prefHeight="70.0" prefWidth="50.0" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="70.0" fitWidth="70.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/icons8_people_100px.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="125.0" layoutY="264.0" prefHeight="130.0" prefWidth="589.0" style="-fx-background-color: #1996F5;" AnchorPane.bottomAnchor="350.0" AnchorPane.leftAnchor="125.0" AnchorPane.rightAnchor="125.0" AnchorPane.topAnchor="350.0">
+         <children>
+            <Label layoutX="70.0" layoutY="25.0" prefHeight="70.0" prefWidth="215.0" text="Số hộ khẩu :" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbSoHoKhau" layoutX="300.0" layoutY="25.0" prefHeight="70.0" prefWidth="0.0" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="70.0" fitWidth="94.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/icons8_house_100px.png" />
+               </image>
+            </ImageView>
+         </children></Pane>
+      <Pane layoutX="125.0" layoutY="414.0" prefHeight="130.0" prefWidth="589.0" style="-fx-background-color: #1996F5;" AnchorPane.bottomAnchor="150.0" AnchorPane.leftAnchor="125.0" AnchorPane.rightAnchor="125.0" AnchorPane.topAnchor="550.0">
+         <children>
+            <Label layoutX="70.0" layoutY="24.0" prefHeight="70.0" prefWidth="215.0" text="Số khoản thu :" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbSoKhoanThu" layoutX="303.0" layoutY="27.0" prefHeight="70.0" prefWidth="0.0" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="70.0" fitWidth="94.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/icons8_money_100px.png" />
+               </image>
+            </ImageView>
+         </children></Pane>
+   </children>
+</AnchorPane>
